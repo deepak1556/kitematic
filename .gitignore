@@ -18,5 +18,6 @@ resources/mongod
 resources/MONGOD_LICENSE.txt
 resources/node
 resources/NODE_LICENSE.txt
+resources/virtualbox-*
 
 script/sign.sh

@@ -13,4 +13,4 @@ export DOCKER_PORT=2375
 cd $BASE/meteor
 exec 3< <(mrt --settings $BASE/meteor/settings_dev.json)
 sed '/App running at/q' <&3 ; cat <&3 &
-NODE_ENV=development $BASE/cache/node-webkit/node-webkit.app/Contents/MacOS/node-webkit $BASE
+NODE_ENV=development $BASE/cache/node-webkit-v0.10.3-linux-x64/nw $BASE

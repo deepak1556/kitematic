@@ -50,11 +50,6 @@ popd
 
 pushd resources
 
-if [ ! -f $VIRTUALBOX_FILE ]; then
-  cecho "-----> Downloading virtualbox installer..." $purple
-  curl -L --progress-bar -o $VIRTUALBOX_FILE http://download.virtualbox.org/virtualbox/4.3.14/VirtualBox-4.3.14-95030-Linux_amd64.run
-fi
-
 cp ../cache/$BOOT2DOCKER_CLI_VERSION_FILE $BOOT2DOCKER_CLI_FILE
 chmod +x $BOOT2DOCKER_CLI_FILE
 

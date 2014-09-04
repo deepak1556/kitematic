@@ -17,6 +17,7 @@ Installer.isUpToDate = function () {
  */
 Installer.steps = [
   {
+      /*
     run: function (callback) {
       var installed = VirtualBox.installed();
       if (!installed) {
@@ -45,7 +46,7 @@ Installer.steps = [
     message: 'Installing VirtualBox',
     futureMessage: 'Install VirtualBox if necessary'
   },
-
+*/
   // Initialize Boot2Docker if necessary.
   {
     run: function (callback) {
@@ -69,7 +70,7 @@ Installer.steps = [
     message: 'Setting up the Boot2Docker VM',
     futureMessage: 'Set up the Boot2Docker VM(if required)'
   },
-
+/*
   {
     run: function (callback) {
       VirtualBox.addCustomHostAdapter('boot2docker-vm', function (err, ifname) {
@@ -80,7 +81,7 @@ Installer.steps = [
     message: 'Adding custom host adapter to the Boot2Docker VM',
     futureMessage: 'Add custom host adapter to the Boot2Docker VM'
   },
-
+*/
   // Start the Kitematic VM
   {
     run: function (callback) {
@@ -102,7 +103,7 @@ Installer.steps = [
     message: 'Starting the Boot2Docker VM',
     futureMessage: 'Start the Kitematic VM',
   },
-
+/*
   {
     run: function (callback) {
       VirtualBox.setupRouting('boot2docker-vm', function (err, ifname) {
@@ -113,7 +114,7 @@ Installer.steps = [
     message: 'Setting up container routing (root required)',
     futureMessage: 'Set up container routing to VM (root required)'
   },
-
+*/
   // Set up the default Kitematic images
   {
     run: function (callback) {
